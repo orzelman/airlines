@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Simulation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .switch-container {
+      position: relative;
+      width: 100px;
+      height: 50px;
+      background-color: #ddd;
+      border-radius: 25px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .circle {
+      position: absolute;
+      top: 50%;
+      transform: translate(20%, -50%);
+      width: 40px;
+      height: 40px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .switch-on .circle {
+      transform: translate(120%, -50%);
+    }
+  </style>
+</head>
+<body>
+   <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Pump Body -->
+      <circle cx="100" cy="100" r="50" fill="#3498db" />
+    
+      <!-- Pump Inlet -->
+      <polygon points="100,30 90,50 110,50" fill="#2ecc71" />
+
+    </svg>
+    
+    
+    
+    
+    
+    
+  <div class="switch-container" onclick="toggleSwitch()">
+    <div class="circle"></div>
+  </div>
+
+  <script>
+    function toggleSwitch() {
+      const switchContainer = document.querySelector('.switch-container');
+      switchContainer.classList.toggle('switch-on');
+    }
+  </script>
+
+</body>
+</html>

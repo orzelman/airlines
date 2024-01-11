@@ -1,0 +1,22 @@
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path
+              d="M25,2 L2,2 L2,25"
+              stroke= "#2d4"
+              stroke-width="2"
+            />
+            <path
+              d="M2,75 L2,98 L25,98"
+              stroke="#2d4"
+              stroke-width="2"
+            />
+            <path
+              d="M75,98 L98,98 L98,75"
+              stroke="#2d4"
+              stroke-width="2"
+            />
+            <path
+              d="M98,25 L98,2 L75,2"
+              stroke="#2d4"
+              stroke-width="2"
+            />
+            </svg>
